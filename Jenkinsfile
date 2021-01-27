@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('verifyPerformance') {
+        stage('Tests Selenium') {
             steps {
                 bat "mvn test"
             }
