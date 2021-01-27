@@ -52,7 +52,7 @@ public class AppTest
         WebElement searchbox = driver.findElement(By.name("field-keywords"));
         searchbox.sendKeys("The Phoenix Project");
         searchbox.submit();
-        assertEquals("Amazon.com - The Phoenix Project", driver.getTitle());
+        assertEquals("Amazon.com : The Phoenix Project", driver.getTitle());
     }
    
 }
