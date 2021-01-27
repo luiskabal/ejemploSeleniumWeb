@@ -50,9 +50,9 @@ public class AppTest
     	driver.get("https://www.amazon.com");
         System.out.println("Iniciando Pruebas...");
         WebElement searchbox = driver.findElement(By.name("field-keywords"));
-        searchbox.sendKeys("The phoenix project");
+        searchbox.sendKeys("The Phoenix Project");
         searchbox.submit();
-        assertEquals("HandBook Devops - Buscar con Google", driver.getTitle());
+        assertEquals("HandBook Devops - The Phoenix Project", driver.getTitle());
     }
    
 }
